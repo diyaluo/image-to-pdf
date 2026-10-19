@@ -6,47 +6,73 @@
   <title>Image to PDF Converter - Free, Private, No Upload</title>
   <meta name="description" content="Convert JPG, PNG, WebP images to PDF for free. All processing happens in your browser - no upload, no servers, complete privacy.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://diyaluo.github.io/image-to-pdf/">
-  <meta name="google-site-verification" content="Uzx8BCovNmn5NYkOvoL1_03UZqRKWNl2D99JCZmjSRc" />
-
-  <!-- Open Graph -->
+    <link rel="canonical" href="https://diyaluo.github.io/image-to-pdf/">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://diyaluo.github.io/image-to-pdf/">
   <meta property="og:title" content="Image to PDF Converter - Free, Private, No Upload">
-  <meta property="og:description" content="Convert JPG, PNG, WebP images to PDF for free. All processing happens in your browser. No upload, complete privacy.">
-  <meta property="og:image" content="https://diyaluo.github.io/image-to-pdf/og-image.png">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Image to PDF Converter - Free, Private, No Upload">
-  <meta name="twitter:description" content="Convert JPG, PNG, WebP to PDF in your browser. 100% private, no uploads.">
-
-  <!-- JSON-LD Structured Data -->
+  <meta property="og:description" content="Convert JPG, PNG, WebP images to PDF free in your browser. No upload, no servers, complete privacy.">
+  <meta property="og:url" content="https://diyaluo.github.io/image-to-pdf/">
+  <meta name="twitter:card" content="summary">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Image to PDF Converter",
-    "url": "https://diyaluo.github.io/image-to-pdf/",
-    "description": "Free, private Image to PDF converter. All processing happens in your browser.",
-    "applicationCategory": "Multimedia",
-    "operatingSystem": "All",
-    "browserRequirements": "Requires JavaScript",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Image to PDF Converter",
+        "url": "https://diyaluo.github.io/image-to-pdf/",
+        "description": "Free in-browser tool that converts JPG, PNG and WebP images to PDF. All processing happens locally in the browser; files are never uploaded.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "featureList": [
+          "Convert JPG to PDF",
+          "Convert PNG to PDF",
+          "Convert WebP to PDF",
+          "100% in-browser processing, files never uploaded",
+          "No sign-up required"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Free Online Tools",
+            "item": "https://diyaluo.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Image to PDF Converter",
+            "item": "https://diyaluo.github.io/image-to-pdf/" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are my images uploaded to a server when I convert them?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Every step runs entirely in your web browser using JavaScript and the pdf-lib library. Your JPG, PNG and WebP files are never transmitted over the network and no server stores them, so the conversion is private and works even with sensitive documents." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which image formats can I convert to PDF?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The converter supports JPG/JPEG, PNG and WebP images. You can select multiple images at once, drag and drop them, reorder the pages, and combine them into a single PDF file." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this image to PDF tool work offline?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The page loads the pdf-lib library from a CDN on first visit, so an internet connection is needed to open it. Once loaded, the conversion itself happens locally; close the tab and the tool is no longer available until you reopen the page." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I choose page size, orientation and margins?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can pick A4, US Letter or the original image size, choose portrait, landscape or automatic orientation that matches each photo, and select none, small or large margins. Each image is scaled to fit the page while keeping its aspect ratio." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a file size limit or do I need to sign up?",
+            "acceptedAnswer": { "@type": "Answer", "text": "There is no account, no sign-up and no usage fee. Because everything is processed in your browser, practical limits depend on your device's memory; large batches of high-resolution photos may take longer on older computers." }
+          }
+        ]
+      }
+    ]
   }
-  </script>
-
-  <!-- Google tag (gtag.js) - GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVDH7Z6YDL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VVDH7Z6YDL');
   </script>
   <style>
     :root {
@@ -531,6 +557,55 @@
       color: var(--text-secondary);
     }
 
+    /* --- SEO Content --- */
+    .seo-content {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .seo-content h2 {
+      font-size: 22px;
+      margin: 28px 0 12px;
+    }
+    .seo-content h2:first-child { margin-top: 0; }
+    .seo-content h3 { font-size: 17px; margin: 18px 0 6px; }
+    .seo-content p {
+      color: #374151;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .seo-content ul { margin: 0 0 12px 22px; color: #374151; font-size: 15px; line-height: 1.8; }
+    .seo-faq details {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      box-shadow: var(--shadow);
+    }
+    .seo-faq summary {
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      list-style: none;
+      position: relative;
+      padding-right: 24px;
+    }
+    .seo-faq summary::-webkit-details-marker { display: none; }
+    .seo-faq summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--primary);
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .seo-faq details[open] summary::after { content: "\2212"; }
+    .seo-faq details p { margin: 10px 0 2px; }
+
     /* --- Responsive --- */
     @media (max-width: 640px) {
       .container { padding: 20px 16px; }
@@ -651,6 +726,51 @@
         </div>
       </div>
     </div>
+
+    <!-- SEO Content -->
+    <section class="seo-content">
+      <h2>Free Image to PDF Converter &mdash; Private and Browser-Based</h2>
+      <p>This free online tool turns one or many photos into a single PDF document in seconds. Add your JPG, PNG or WebP images, drag them into the order you want, choose a page size, and download the finished PDF. The whole conversion happens locally in your browser, which makes it a practical choice for ID scans, receipts, signed forms, screenshots and any other pictures you would rather not upload to an unknown website.</p>
+      <p>Unlike server-side converters that ask you to upload files and then email you a download link, nothing here leaves your computer. There is no file queue, no account and no watermark on the output.</p>
+
+      <h2>What you can do</h2>
+      <ul>
+        <li><strong>Combine multiple images into one PDF</strong> &mdash; select a whole folder of photos and merge them into a single, ordered document.</li>
+        <li><strong>Reorder pages before exporting</strong> &mdash; drag-and-drop selection plus up/down controls let you arrange each page exactly.</li>
+        <li><strong>Control the page layout</strong> &mdash; A4, US Letter or original image size; portrait, landscape or automatic orientation; none, small or large margins.</li>
+        <li><strong>Keep photos private</strong> &mdash; all rendering runs in your browser with the open-source <a href="https://pdf-lib.js.org/" target="_blank" rel="noopener">pdf-lib</a> library, so files are never uploaded.</li>
+      </ul>
+
+      <h2>JPG, PNG or WebP &mdash; which should you use?</h2>
+      <p>JPG is the natural choice for photos and scans with lots of color, PNG works best for screenshots, signatures and graphics with sharp edges or transparency, and WebP keeps modern web images small. The converter accepts all three and places each image on its own page, scaled to fit while preserving the original aspect ratio &mdash; nothing gets stretched or cropped.</p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="seo-faq">
+        <details>
+          <summary>Are my images uploaded to a server?</summary>
+          <p>No. The conversion runs entirely in your browser with JavaScript and pdf-lib. Your pictures are not sent over the network or stored anywhere, so the tool is safe for sensitive documents.</p>
+        </details>
+        <details>
+          <summary>Which image formats are supported?</summary>
+          <p>JPG/JPEG, PNG and WebP. You can select several images at once, reorder them, and combine them into one PDF.</p>
+        </details>
+        <details>
+          <summary>Does it work offline?</summary>
+          <p>The pdf-lib library loads from a CDN when you first open the page, so an internet connection is needed to open it. After that, the actual conversion is performed locally on your device.</p>
+        </details>
+        <details>
+          <summary>Can I set page size, orientation and margins?</summary>
+          <p>Yes. Choose A4, US Letter or original size; portrait, landscape or automatic orientation; and none, small or large margins. Every image is scaled to fit the selected page without distortion.</p>
+        </details>
+        <details>
+          <summary>Is there a sign-up or file size limit?</summary>
+          <p>There is no account, no sign-up and no fee. Because processing happens on your device, very large batches of high-resolution photos may take more time or memory on older computers.</p>
+        </details>
+      </div>
+
+      <h2>More free tools</h2>
+      <p>Also try our <a href="https://diyaluo.github.io/image-compressor/">image compressor</a> to shrink PNG, JPEG and WebP file sizes, our <a href="https://diyaluo.github.io/watermark-remover/">watermark remover</a>, or browse all <a href="https://diyaluo.github.io/">free online tools</a>.</p>
+    </section>
   </main>
 
   <footer>
